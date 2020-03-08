@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  haskell:
+    build: go
+    container_name: '${COMPOSE_PROJECT_NAME}-go'
+    tty: true
+    volumes:
+      - "../src/go:/opt/src"
